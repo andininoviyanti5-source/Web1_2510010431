@@ -1,0 +1,167 @@
+<!DOC<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Katalog kain dan busana Sasirangan khas Banjarmasin 
+karya pengrajin lokal.">
+<title>Sasirangan Banua | Kain Khas Banjar</title>
+</head>
+<body>
+
+</body>
+</html>
+<!-- ========== HEADER & NAVIGASI ========== -->
+<header class="header-situs">
+ <p class="logo"><a href="index.html">Sasirangan Banua</a></p>
+ <nav aria-label="Navigasi utama">
+ <ul class="menu">
+ <li><a href="index.html" aria-current="page">Beranda</a></li>
+ <li><a href="#katalog">Katalog</a></li>
+ <li><a href="#tentang">Tentang</a></li>
+ <li><a href="kontak.html">Pesan</a></li>
+ </ul>
+ </nav>
+</header>
+<main>
+ <!-- ========== HERO ========== -->
+ <section class="hero" id="beranda">
+ <h1>Kain Sasirangan Asli Banjarmasin</h1>
+ <p>Dibuat tangan oleh pengrajin Kampung Sasirangan dengan motif warisan Urang Banjar.
+ Setiap helai kain membawa cerita tentang budaya Banua.</p>
+ <a class="tombol" href="#katalog">Lihat Katalog</a>
+ </section>
+ <!-- ========== KATALOG ========== -->
+<section class="bagian" id="katalog">
+ <h2>Katalog Produk</h2>
+ <p>Pilihan kain, busana, dan aksesoris Sasirangan terbaru.</p>
+ <div class="katalog-grid">
+ <article class="kartu">
+ <img src="img/gigi-haruan.svg" alt="Kain sasirangan motif gigi haruan warna merah marun"
+ width="600" height="400">
+ <div class="kartu-isi">
+ <h3>Kain Motif Gigi Haruan</h3>
+ <p>Kain katun 2 meter bermotif zig-zag menyerupai gigi ikan haruan.</p>
+ <p class="harga">Rp185.000</p>
+ </div>
+ </article>
+ <article class="kartu">
+ <img src="img/kambang-kacang.svg" alt="Kain sasirangan motif kambang kacang warna hijau 
+tosca"
+ width="600" height="400">
+ <div class="kartu-isi">
+ <h3>Kain Motif Kambang Kacang</h3>
+ <p>Motif bunga kacang yang melambangkan keakraban dan kerukunan.</p>
+ <p class="harga">Rp175.000</p>
+ </div>
+ </article>
+ <!-- Tambahkan minimal 4 kartu lagi dengan pola yang sama -->
+  </div>
+</section>
+<!-- ========== TENTANG ========== -->
+ <section class="bagian" id="tentang">
+ <h2>Tentang Kami</h2>
+ <p><strong>Sasirangan Banua</strong> adalah UMKM <em>(fiktif, untuk latihan)</em> yang
+ memproduksi kain sasirangan dengan teknik jahit-ikat-celup tradisional. Kami bekerja sama
+ dengan pengrajin lokal untuk menjaga warisan budaya Kalimantan Selatan.</p>
+ <h3>Keunggulan Produk</h3>
+ <ul>
+ <li>Dikerjakan tangan oleh pengrajin lokal</li>
+ <li>Motif asli warisan budaya Banjar</li>
+ <li>Bahan katun, rayon, dan sutra pilihan</li>
+ </ul>
+ <h3>Jam Buka Galeri</h3>
+ <table>
+ <caption>Jadwal buka galeri Sasirangan Banua (WITA)</caption>
+ <thead>
+ <tr>
+ <th scope="col">Hari</th>
+ <th scope="col">Jam Buka</th>
+ </tr>
+ </thead>
+ <tbody>
+ <tr>
+ <td>Senin–Kamis</td>
+ <td>08.00–17.00</td>
+ </tr>
+ <tr>
+ <td>Jumat</td>
+ <td>08.00–11.00 dan 14.00–17.00</td>
+ </tr>
+ <tr>
+ <td>Sabtu–Ahad</td>
+ <td>09.00–16.00</td>
+ </tr>
+ </tbody>
+ </table>
+ </section>
+</main>
+<!-- ========== FOOTER ========== -->
+ <footer class="footer-situs">
+ <p>&copy; 2026 Sasirangan Banua &middot; Kampung Sasirangan, Banjarmasin</p>
+ <p>Dibuat oleh Nama Mahasiswa (NPM) &middot; Praktikum Pemrograman Web 1 UNISKA MAB</p>
+ </footer>
+</body>
+</html>
+<main>
+<section class="bagian" id="pesan">
+ <h1>Formulir Pemesanan</h1>
+ <p>Isi formulir berikut. Kolom bertanda <strong>*</strong> wajib diisi.</p>
+
+ <form id="form-pesan" class="form-pesan" action="#" method="get">
+ <div class="kolom">
+ <label for="nama">Nama lengkap *</label>
+ <input type="text" id="nama" name="nama" required minlength="3"
+autocomplete="name">
+ </div>
+
+<div class="kolom">
+<label for="wa">Nomor WhatsApp *</label>
+ <input type="tel" id="wa" name="wa" required pattern="08[0-9]{8,11}"
+placeholder="Contoh: 081234567890" autocomplete="tel">
+ </div>
+
+ <div class="kolom">
+ <label for="email">Surel</label>
+<input type="email" id="email" name="email" autocomplete="email">
+ </div>
+
+<div class="kolom">
+ <label for="produk">Produk yang dipesan *</label>
+ <select id="produk" name="produk" required>
+ <option value="">-- Pilih produk --</option>
+ <option>Kain Motif Gigi Haruan</option>
+ <option>Kain Motif Kambang Kacang</option>
+ <option>Selendang Iris Pudak</option>
+ <option>Kemeja Bayam Raja</option>
+ <option>Tas Naga Balimbur</option>
+ <option>Gamis Ombak Sinapur Karang</option>
+ </select>
+ </div>
+
+ <div class="kolom">
+ <label for="jumlah">Jumlah *</label>
+ <input type="number" id="jumlah" name="jumlah" min="1" max="50" value="1" required>
+ </div>
+ <fieldset>
+ <legend>Metode pengambilan *</legend>
+ <label><input type="radio" name="pengambilan" value="Ambil di galeri" checked>
+Ambil di galeri</label>
+<label><input type="radio" name="pengambilan" value="Dikirim ke alamat"> Dikirim 
+ke alamat</label>
+</fieldset>
+
+<div class="kolom">
+    <label for="catatan">Catatan tambahan</label>
+<textarea id="catatan" name="catatan" rows="4" maxlength="300"
+placeholder="Contoh: ukuran L, warna dominan merah"></textarea>
+</div>
+
+<label class="cek">
+<input type="checkbox" id="setuju" name="setuju" required>
+Saya setuju data ini hanya dipakai untuk memproses pesanan. *
+</label>
+
+<button type="submit" class="tombol">Kirim Pesanan</button>
+</form>
+</section>
+</main>
